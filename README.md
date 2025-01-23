@@ -53,5 +53,6 @@ fer0000004.png,0
 
 <br>
 
-<img alt="image" src="https://github.com/user-attachments/assets/ba347b23-2afb-4d15-a799-8ccc74280fbe" />
+<img width="1144" alt="image" src="https://github.com/user-attachments/assets/b5e7f71c-b3cb-4030-9e9f-a094c991cd66" />
+
 
