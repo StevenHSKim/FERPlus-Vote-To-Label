@@ -6,12 +6,12 @@
 - 원본 데이터셋의 label csv파일은 10명의 주석자의 투표 결과의 형태로 이루어져 있음.
 - 하나의 이미지에 하나의 expression label을 설정하기 위해, 가장 많은 투표 결과를 받은 한 개의 감정을 label로 채택하였음.
 
-방법 1)
-- 이때 최고 투표 결과가 동점인 경우 label 순서(0:Neutral, 1:Happiness, 2:Surprise, 3:Sadness, 4:Anger, 5:Disgust, 6:Fear, 7:Contempt)에서 `앞쪽`에 위치한 것으로 결정하였음(예: 4,0,0,4,2,0,0,0 인 경우 Neutral로 결정).
+방법 1) Select First
+- 이때 최고 투표 결과가 동점인 경우 label 순서(0:Neutral, 1:Happiness, 2:Surprise, 3:Sadness, 4:Anger, 5:Disgust, 6:Fear, 7:Contempt)에서 **앞쪽**에 위치한 것으로 결정하였음(예: 4,0,0,4,2,0,0,0 인 경우 Neutral로 결정).
 - 이에 따라 클래스 분포에서 Neutral이 많아지게 됨.
 
-방법 2)
-- 최고 투표 결과가 동점인 경우 label 순서(0:Neutral, 1:Happiness, 2:Surprise, 3:Sadness, 4:Anger, 5:Disgust, 6:Fear, 7:Contempt)에서 `뒤쪽`에 위치한 것으로 결정하였음(예: 4,0,0,4,2,0,0,0 인 경우 Sadness로 결정).
+방법 2) Select Last
+- 최고 투표 결과가 동점인 경우 label 순서(0:Neutral, 1:Happiness, 2:Surprise, 3:Sadness, 4:Anger, 5:Disgust, 6:Fear, 7:Contempt)에서 **뒤쪽**에 위치한 것으로 결정하였음(예: 4,0,0,4,2,0,0,0 인 경우 Sadness로 결정).
 - 이에 따라 클래스 분포에서 Neutral이 적어지게 됨.
 
 
@@ -48,10 +48,10 @@ fer0000004.png,0
 
 | **Dataset** | **Method** | **#Images** | **#Neutral** | **#Happiness** | **#Surprise** | **#Sadness** | **#Anger** | **#Disgust** | **#Fear** | **#Contempt** |
 | :---------: | :--------: | :---------: | :----------: | :------------: | :-----------: | :----------: | :--------: | :----------: | :-------: | :-----------: |
-| FERPlus     | 방법 1     | 35711       | 13013        | 9367           | 4493          | 4415         | 3124       | 253          | 825       | 221           |
-| FERPlus     | 방법 2     | 35711       | 11909        | 9361           | 4452          | 4903         | 3343       | 351          | 1062      | 330           |
+| FERPlus     | Select First | 35711       | 13013        | 9367           | 4493          | 4415         | 3124       | 253          | 825       | 221           |
+| FERPlus     | Select Last  | 35711       | 11909        | 9361           | 4452          | 4903         | 3343       | 351          | 1062      | 330           |
 
+<br>
 
-
-<img width="1078" alt="image" src="https://github.com/user-attachments/assets/ba347b23-2afb-4d15-a799-8ccc74280fbe" />
+<img alt="image" src="https://github.com/user-attachments/assets/ba347b23-2afb-4d15-a799-8ccc74280fbe" />
 
