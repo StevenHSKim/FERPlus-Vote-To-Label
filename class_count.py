@@ -1,11 +1,20 @@
 import pandas as pd
 
-# CSV 파일 읽기
-data = pd.read_csv('./FERPlus_Label_modified.csv')
-
-# 각 클래스(label)의 개수 세기
-class_counts = data['label'].value_counts().sort_index()
-
-# 클래스 개수 출력
-for label, count in class_counts.items():
-    print(f"{label}: {count}")
+def count_classes(data_path):
+    """
+    Count the number of samples in each class.
+    
+    Args:
+        data_path (str): Path to the preprocessed label file
+        
+    Returns:
+        pd.Series: Class distribution
+    """
+    data = pd.read_csv(data_path)
+    class_counts = data['label'].value_counts().sort_index()
+    
+    # Print class distribution
+    for label, count in class_counts.items():
+        print(f"Class {label}: {count} samples")
+    
+    return class_counts
