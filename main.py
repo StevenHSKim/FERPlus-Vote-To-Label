@@ -10,9 +10,9 @@ def parse_arguments():
     parser.add_argument(
         "--method",
         type=str,
-        default='back',
-        choices=['front', 'back'],
-        help="Method for handling tied maximum scores (front: select first, back: select last)"
+        default='select_last',
+        choices=['select_first', 'select_last'],
+        help="Method for handling tied maximum scores"
     )
     return parser.parse_args()
 
@@ -37,7 +37,7 @@ def preprocess_data(data_path, method):
     data = data[(data.iloc[:, 1:] != 0).any(axis=1)]
     
     # Assign labels based on maximum emotion scores
-    if method == 'front':
+    if method == 'select_first':
         # Select first maximum (favors Neutral class)
         data['label'] = data.iloc[:, 1:].apply(lambda row: row.values.argmax(), axis=1)
     else:

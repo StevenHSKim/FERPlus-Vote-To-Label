@@ -15,8 +15,7 @@ def plot_distribution(data_path, output_path):
     
     # Define class names
     class_names = [
-        "Neutral", "Happiness", "Surprise", "Sadness",
-        "Anger", "Disgust", "Fear", "Contempt"
+        "Neutral", "Happiness", "Surprise", "Sadness", "Anger", "Disgust", "Fear", "Contempt"
     ]
     
     # Create plot
