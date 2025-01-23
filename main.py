@@ -54,7 +54,8 @@ def main():
     args = parse_arguments()
     
     # Define paths
-    data_path = Path('path/to/fer2013new.csv')  ### Todo: Change this path
+    # data_path = Path('path/to/fer2013new.csv')  ### Todo: Change this path
+    data_path = Path('/Users/kimhaeseong/FER_dataset/FERPlus_dataset/fer2013new.csv')
     output_path = Path(f'result/FERPlus_Label_modified_{args.method}.csv')
     plot_path = Path('img')
     
