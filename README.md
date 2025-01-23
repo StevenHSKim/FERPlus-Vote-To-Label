@@ -7,7 +7,7 @@ FERPlus 데이터셋의 주석 파일을 수정하는 코드
 - 이때 최고 투표 결과가 동점인 경우 label 순서(0:Neutral, 1:Happiness, 2:Surprise, 3:Sadness, 4:Anger, 5:Disgust, 6:Fear, 7:Contempt)에서 앞쪽에 위치한 것으로 결정하였음(예: 4,0,0,4,2,0,0,0 인 경우 Neutral로 결정).
 - 이에 따라 클래스 분포에서 Neutral이 많아지게 됨.
 
-## 예시
+## 변환 예시
 - 변경 전
 ```
 Usage,Image name,neutral,happiness,surprise,sadness,anger,disgust,fear,contempt,unknown,NF
@@ -37,3 +37,8 @@ fer0000007.png,1
 fer0000008.png,1
 fer0000009.png,2
 ```
+
+## 최종 데이터셋 구성
+| **Dataset** | **#Images** | **#Anger** | **#Disgust** | **#Fear** | **#Happiness** | **#Sadness** | **#Surprise** | **#Neutral** | **#Contempt** |
+| :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
+| FERPlus | 35711 | 3124 | 253 | 825 | 9367 | 4415 | 4493 | 13013 | 221 |
