@@ -1,10 +1,10 @@
 # FERPlus_Vote_To_Label
-FERPlus 데이터셋의 주석을 수정하는 코드
+FERPlus 데이터셋의 주석 파일을 수정하는 코드
 
 ## 설명
-- 원본 데이터셋의 label은 10명의 주석자의 투표 결과의 형태로 이루어져 있음.
-- 따라서 가장 많은 투표 결과를 받은 한 개의 감정을 label로 채택함.
-- 이때 최고 투표 결과가 동점인 경우 label 순서(0:Neutral, 1:Happiness, 2:Surprise, 3:Sadness, 4:Anger, 5:Disgust, 6:Fear, 7:Contempt)에서 앞쪽에 위치한 것으로 결정함 (예: 4,0,0,4,2,0,0,0 인 경우 Neutral로 결정).
+- 원본 데이터셋의 label csv파일은 10명의 주석자의 투표 결과의 형태로 이루어져 있음.
+- 하나의 이미지에 하나의 expression label을 설정하기 위해, 가장 많은 투표 결과를 받은 한 개의 감정을 label로 채택하였음.
+- 이때 최고 투표 결과가 동점인 경우 label 순서(0:Neutral, 1:Happiness, 2:Surprise, 3:Sadness, 4:Anger, 5:Disgust, 6:Fear, 7:Contempt)에서 앞쪽에 위치한 것으로 결정하였음(예: 4,0,0,4,2,0,0,0 인 경우 Neutral로 결정).
 - 이에 따라 클래스 분포에서 Neutral이 많아지게 됨.
 
 ## 예시
