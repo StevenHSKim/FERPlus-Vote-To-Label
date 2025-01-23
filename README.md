@@ -1,7 +1,8 @@
 # FERPlus_Vote_To_Label
-FERPlus 데이터셋의 주석 파일을 수정하는 코드
+[FERPlus](https://github.com/microsoft/FERPlus) 데이터셋의 주석 파일을 수정하는 코드
 
 ## 설명
+- FERPlus 데이터셋은 기존 [FER2013](https://www.kaggle.com/datasets/msambare/fer2013) 데이터셋의 이미지를 그대로 유지하면서, 각 이미지에 대해 10명의 주석자가 감정을 투표한 결과를 추가로 포함한 데이터셋임
 - 원본 데이터셋의 label csv파일은 10명의 주석자의 투표 결과의 형태로 이루어져 있음.
 - 하나의 이미지에 하나의 expression label을 설정하기 위해, 가장 많은 투표 결과를 받은 한 개의 감정을 label로 채택하였음.
 - 이때 최고 투표 결과가 동점인 경우 label 순서(0:Neutral, 1:Happiness, 2:Surprise, 3:Sadness, 4:Anger, 5:Disgust, 6:Fear, 7:Contempt)에서 앞쪽에 위치한 것으로 결정하였음(예: 4,0,0,4,2,0,0,0 인 경우 Neutral로 결정).
@@ -42,3 +43,6 @@ fer0000009.png,2
 | **Dataset** | **#Images** | **#Anger** | **#Disgust** | **#Fear** | **#Happiness** | **#Sadness** | **#Surprise** | **#Neutral** | **#Contempt** |
 | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
 | FERPlus | 35711 | 3124 | 253 | 825 | 9367 | 4415 | 4493 | 13013 | 221 |
+
+
+<img src="https://github.com/user-attachments/assets/9d6f2134-bbac-4906-ab1c-63cb5ea7aefc" alt="output" width="600">
