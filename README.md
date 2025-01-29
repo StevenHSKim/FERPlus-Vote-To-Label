@@ -48,7 +48,7 @@ fer0000004.png,0
 
 ## Final Dataset Composition
 
-| **Dataset** | **Method** | **#Images** | **#Neutral** | **#Happiness** | **#Surprise** | **#Sadness** | **#Anger** | **#Disgust** | **#Fear** | **#Contempt** |
+| **Dataset** | **Method** | **#Total Images** | **#Neutral** | **#Happiness** | **#Surprise** | **#Sadness** | **#Anger** | **#Disgust** | **#Fear** | **#Contempt** |
 | :---------: | :--------: | :---------: | :----------: | :------------: | :-----------: | :----------: | :--------: | :----------: | :-------: | :-----------: |
 | FERPlus     | Select First | 35711       | 13013        | 9367           | 4493          | 4415         | 3124       | 253          | 825       | 221           |
 | FERPlus     | Select Last  | 35711       | 11909        | 9361           | 4452          | 4903         | 3343       | 351          | 1062      | 330           |
