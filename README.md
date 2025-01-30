@@ -1,5 +1,5 @@
 # FERPlus_Vote_To_Label
-Code to modify annotation files for the [FERPlus](https://github.com/microsoft/FERPlus) dataset
+Code to modify label files for the [FERPlus](https://github.com/microsoft/FERPlus) dataset
 
 ## 설명
 - The FERPlus dataset retains the original images from the [FER2013](https://www.kaggle.com/datasets/msambare/fer2013) dataset while including the voting results of 10 annotators for each image
