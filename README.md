@@ -1,7 +1,7 @@
 # FERPlus_Vote_To_Label
 Code to modify label files for the [FERPlus](https://github.com/microsoft/FERPlus) dataset
 
-## 설명
+## Description
 - The FERPlus dataset retains the original images from the [FER2013](https://www.kaggle.com/datasets/msambare/fer2013) dataset while including the voting results of 10 annotators for each image
 - The label CSV file in the original dataset contains the voting results from 10 annotators
 - To assign a single expression label to each image, the emotion with the highest number of votes was chosen as the label.
